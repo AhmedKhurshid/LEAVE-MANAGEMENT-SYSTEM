@@ -1,0 +1,14 @@
+For Admin Login 
+
+Username: Admin
+Password: 123
+
+For Manager Login 
+
+Username: manager
+Password: 1234
+
+For Employee Login 
+
+Username: employee
+Password: 12345

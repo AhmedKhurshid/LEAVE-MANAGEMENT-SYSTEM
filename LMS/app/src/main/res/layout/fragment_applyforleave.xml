@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplyforleaveFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="123dp"
+            android:layout_marginRight="123dp"
+            android:gravity="center"
+            android:scrollbarSize="20dp"
+            android:text="APPLY FOR LEAVE"
+            android:textColor="@color/theme1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/etaltitle"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/theme1"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:scrollbarSize="20dp"
+            android:textColor="@color/theme1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Spinner
+            android:id="@+id/spinneraltl"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:addStatesFromChildren="false"
+            android:backgroundTint="@color/theme1"
+            android:outlineSpotShadowColor="@color/theme1"
+            android:scrollbarSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etaltitle" />
+
+        <Spinner
+            android:id="@+id/spinneraldp"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:addStatesFromChildren="false"
+            android:backgroundTint="@color/theme1"
+            android:outlineSpotShadowColor="@color/theme1"
+            android:scrollbarSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinneraltl" />
+
+        <EditText
+            android:id="@+id/etalperpose"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/theme1"
+            android:ems="10"
+            android:hint="Purpose Of Leave"
+            android:inputType="textLongMessage"
+            android:paddingLeft="10dp"
+            android:scrollbarSize="20dp"
+            android:textColor="@color/theme1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinneraldp" />
+
+        <EditText
+            android:id="@+id/etalemail"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/theme1"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:scrollbarSize="20dp"
+            android:textColor="@color/theme1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etalperpose" />
+
+        <EditText
+            android:id="@+id/etalnumber"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/theme1"
+            android:ems="10"
+            android:hint="Number"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:scrollbarSize="20dp"
+            android:textColor="@color/theme1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etalemail" />
+
+        <EditText
+            android:id="@+id/etaladdress"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/theme1"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:scrollbarSize="20dp"
+            android:textColor="@color/theme1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etalnumber" />
+
+        <EditText
+            android:id="@+id/etalnodays"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/theme1"
+            android:ems="10"
+            android:hint="No Of Day's"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:scrollbarSize="20dp"
+            android:textColor="@color/theme1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etaladdress" />
+
+        <EditText
+            android:id="@+id/datestart"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:hint="Start Date..."
+            android:padding="15dp"
+            android:textColor="@color/theme1"
+            android:textColorHint="@color/theme1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etalnodays" />
+
+        <EditText
+            android:id="@+id/dateend"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:hint="End Date..."
+            android:padding="15dp"
+            android:textColor="@color/theme1"
+            android:textColorHint="@color/theme1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datestart" />
+
+        <Button
+            android:id="@+id/btnal"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:scrollbarSize="20dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateend" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</FrameLayout>

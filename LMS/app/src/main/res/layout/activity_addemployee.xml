@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addemployee">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ive"
+                android:layout_width="123dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/placehoder" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Choose Image"
+                android:textColor="@color/theme1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ive" />
+
+            <EditText
+                android:id="@+id/etaename"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/etaecnic"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="CNIC"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaename" />
+
+            <EditText
+                android:id="@+id/etaejdate"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="Join Date"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaecnic" />
+
+            <EditText
+                android:id="@+id/etaeaddress"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaejdate" />
+
+            <EditText
+                android:id="@+id/etaesalary"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="Salary"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaeaddress" />
+
+            <EditText
+                android:id="@+id/etaeleave"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="Leave's"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaesalary" />
+
+            <EditText
+                android:id="@+id/etaeemail"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName|textEmailAddress"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaeleave" />
+
+            <EditText
+                android:id="@+id/etaepass"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/theme1"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:scrollbarSize="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaeemail" />
+
+            <Spinner
+                android:id="@+id/spinnerae"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:addStatesFromChildren="false"
+                android:backgroundTint="@color/theme1"
+                android:scrollbarSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etaepass" />
+
+            <Spinner
+                android:id="@+id/spinnerae2"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:addStatesFromChildren="false"
+                android:backgroundTint="@color/theme1"
+                android:scrollbarSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerae" />
+
+            <Button
+                android:id="@+id/btnae"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:scrollbarSize="20dp"
+                android:text="Submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerae2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
